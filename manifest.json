@@ -1,0 +1,42 @@
+{
+    "name": "Estiah Gear",
+    "version": "0.93",
+    "description": "Estiah Chrome Extension by Prajna",
+    "content_scripts": [
+      {
+        "matches": ["http://www.estiah.com/character/deck/index/id/*","http://www.estiah.com/character/deck"],
+        "js": ["jquery.js", "gear.js","json.js"],
+        "run_at": "document_end"
+      },
+      {
+        "js": ["jquery.js", "json.js", "dungeon.js"],
+        "matches": [ "http://www.estiah.com/dungeon/room/index/id/*","http://www.estiah.com/dungeon/site/index/id/*" ],
+        "run_at": "document_end"
+      },
+      {
+        "js": ["jquery.js", "json.js", "raid.js"],
+        "matches": [ "http://www.estiah.com/dungeon/*" ],
+        "run_at": "document_end"
+      },
+      {
+        "js": ["jquery.js", "json.js", "wiki.js"],
+        "matches": [ "http://www.estiah.com/*" ],
+        "run_at": "document_end"
+      },
+      {
+        "js": ["jquery.js", "json.js", "color.js"],
+        "matches": [ "http://www.estiah.com/pvp" ],
+        "run_at": "document_end"
+      },
+      {
+        "js": ["jquery.js", "json.js", "inventory.js"],
+        "matches": [ "http://www.estiah.com/character/inventory" ],
+        "run_at": "document_end"
+      },
+      {
+        "js": ["jquery.js", "json.js", "export_history.js"],
+        "matches": [ "http://www.estiah.com/character/combat/replay/id/*" ],
+        "run_at": "document_end"
+      }
+    ]
+}
