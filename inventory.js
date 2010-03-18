@@ -11,6 +11,7 @@ $('.PT_picker_all').each(function(){
     $(this).find('.functions strong').before('<a style="color: '+ getColor(exchangeRate[kind]) +'">('+ exchangeRate[kind] +'%)</a>&nbsp;&nbsp;&nbsp;');
 });
 
+//This method is from AllinOne by Sheira
 function getColor(rate){
     var red, green, blue;
 	if (rate <= 90)
