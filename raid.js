@@ -1,3 +1,6 @@
+$('#PartyForm option:selected').attr('selected', '');
+$('#PartyForm option:first').attr('selected', 'selected');
+
 var load = "<select id='load_local_gear' class='select'><option value='-1'>Please select...</option>";
 
 var playerId = $('a[href^="/character/achievement/index/id/"]').attr('href').split('/').pop();

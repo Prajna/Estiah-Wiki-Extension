@@ -1,6 +1,6 @@
 {
     "name": "Estiah Gear",
-    "version": "0.93",
+    "version": "0.94",
     "description": "Estiah Chrome Extension by Prajna",
     "content_scripts": [
       {

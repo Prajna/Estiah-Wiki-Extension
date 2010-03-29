@@ -1,3 +1,6 @@
+$('#VsForm option:selected').attr('selected', '');
+$('#VsForm option:first').attr('selected', 'selected');
+
 var load = "<div class='decks'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id='load_local_gear'><option value='-1'>Please select...</option>";
 
 var playerId = $('a[href^="/character/achievement/index/id/"]').attr('href').split('/').pop();
