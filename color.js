@@ -26,6 +26,8 @@ var color = {
     "Warlord": '<lable style="color: brown">Br</lable>  <lable style="color: green">G</lable>'
 };
 
+
+
 $('#VsFormPagination').bind('DOMNodeRemoved', function(){
     $('.BV_system_highlight').each(function(){
         var playerId = $(this).find('.BV_system_file').attr('href').split('/').pop();
